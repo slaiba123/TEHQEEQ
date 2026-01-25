@@ -1,0 +1,23 @@
+2026-01-25 19:50:13,536 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-25 19:50:13,539 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-25 19:50:15,839 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-25 19:50:16,716 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-25 19:50:16,716 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-25 19:50:27,036 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 10.107 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-25 19:50:27,048 - modules.passive - INFO - DNS enumeration completed
+2026-01-25 19:50:27,048 - modules.passive - INFO - Starting API-free subdomain enumeration for google.com
+2026-01-25 19:50:47,336 - modules.passive - INFO - Subdomain enumeration completed. Total: 44
+2026-01-25 19:50:47,338 - __main__ - INFO - Passive reconnaissance completed
+2026-01-25 19:50:47,340 - modules.active - INFO - Resolved google.com to 142.250.187.78
+2026-01-25 19:50:47,341 - modules.active - INFO - Starting port scan on google.com
+2026-01-25 19:51:07,671 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-25 19:51:07,671 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-25 19:51:13,119 - modules.active - INFO - Banner grabbed from port 80
+2026-01-25 19:51:28,206 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-25 19:51:28,206 - modules.active - INFO - Starting technology detection for google.com
+2026-01-25 19:51:30,219 - modules.active - INFO - Technology detection completed. 4 technologies found
+2026-01-25 19:51:30,226 - __main__ - INFO - Active reconnaissance completed
+2026-01-25 19:51:33,160 - modules.reporter - INFO - Generating PDF report: reports/google_com_20260125_195130.pdf
+2026-01-25 19:51:33,179 - modules.reporter - INFO - PDF report generated successfully: reports/google_com_20260125_195130.pdf
+2026-01-25 19:51:33,179 - __main__ - INFO - Report generated: reports/google_com_20260125_195130.pdf
+2026-01-25 19:51:33,185 - __main__ - INFO - === Reconnaissance Tool Finished ===

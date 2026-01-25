@@ -1,0 +1,73 @@
+2026-01-21 20:43:50,518 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-21 20:43:50,518 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-21 20:44:03,988 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-21 20:44:03,989 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-21 20:44:05,817 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-21 20:44:11,442 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-21 20:44:11,442 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-21 20:44:16,750 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 5.037 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.; Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-21 20:44:16,759 - modules.passive - INFO - DNS enumeration completed
+2026-01-21 20:44:16,759 - modules.passive - INFO - Starting subdomain enumeration for google.com
+2026-01-21 20:44:34,372 - modules.passive - INFO - crt.sh found 227 subdomains
+2026-01-21 20:44:39,966 - modules.passive - INFO - Subdomain enumeration completed. Total: 227
+2026-01-21 20:44:39,968 - __main__ - INFO - Passive reconnaissance completed
+2026-01-21 20:44:40,016 - modules.active - INFO - Resolved google.com to 142.250.187.78
+2026-01-21 20:44:40,016 - modules.active - INFO - Starting port scan on google.com
+2026-01-21 20:44:40,030 - modules.active - ERROR - Nmap scan failed: 'nmap program was not found in path. PATH is : C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot;C:\\app\\92331\\product\\11.2.0\\dbhome_1\\bin;C:\\Python312\\Scripts\\;C:\\Python312\\;C:\\msys64\\ucrt64\\bin;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\92331\\Downloads\\ffmpeg-7.1.1-essentials_build\\ffmpeg-7.1.1-essentials_build\\bin;C:\\Program Files\\StripeCLI\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\sox;C:\\ngrok;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python39\\;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Launcher\\;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python310\\python.exe;C:\\msys64\\ucrt64\\bin;C:\\MinGW\\bin;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\92331\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.3\\bin;;C:\\Program Files\\Azure Data Studio\\bin;C:\\Microsoft VS Code\\bin;C:\\Users\\92331\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\92331\\AppData\\Roaming\\npm;C:\\Users\\92331\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+2026-01-21 20:45:00,532 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-21 20:45:00,532 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-21 20:45:15,975 - modules.active - INFO - Banner grabbing completed. 0 banners found
+2026-01-21 20:45:15,976 - modules.active - INFO - Starting technology detection for google.com
+2026-01-21 20:45:19,108 - modules.active - INFO - Technology detection completed. 3 technologies found
+2026-01-21 20:45:19,112 - __main__ - INFO - Active reconnaissance completed
+2026-01-21 20:45:22,110 - modules.reporter - INFO - Generating PDF report: reports/google_com_20260121_204519.pdf
+2026-01-21 20:45:22,121 - modules.reporter - INFO - PDF report generated successfully: reports/google_com_20260121_204519.pdf
+2026-01-21 20:45:22,122 - __main__ - INFO - Report generated: reports/google_com_20260121_204519.pdf
+2026-01-21 20:45:22,125 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-21 21:14:36,176 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-21 21:14:36,179 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-21 21:14:38,882 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-21 21:14:49,472 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-21 21:14:49,472 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-21 21:14:55,714 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 5.005 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.; Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-21 21:14:55,727 - modules.passive - INFO - DNS enumeration completed
+2026-01-21 21:14:55,727 - modules.passive - INFO - Starting subdomain enumeration for google.com
+2026-01-21 21:15:15,175 - modules.passive - INFO - Subdomain enumeration completed. Total: 0
+2026-01-21 21:15:15,188 - __main__ - INFO - Passive reconnaissance completed
+2026-01-21 21:15:15,273 - modules.active - INFO - Resolved google.com to 142.250.187.78
+2026-01-21 21:15:15,274 - modules.active - INFO - Starting port scan on google.com
+2026-01-21 21:15:15,617 - modules.active - ERROR - Nmap scan failed: 'nmap program was not found in path. PATH is : C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot;C:\\app\\92331\\product\\11.2.0\\dbhome_1\\bin;C:\\Python312\\Scripts\\;C:\\Python312\\;C:\\msys64\\ucrt64\\bin;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\92331\\Downloads\\ffmpeg-7.1.1-essentials_build\\ffmpeg-7.1.1-essentials_build\\bin;C:\\Program Files\\StripeCLI\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\sox;C:\\ngrok;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python39\\;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Launcher\\;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python310\\python.exe;C:\\msys64\\ucrt64\\bin;C:\\MinGW\\bin;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\92331\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\92331\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.3\\bin;;C:\\Program Files\\Azure Data Studio\\bin;C:\\Microsoft VS Code\\bin;C:\\Users\\92331\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\92331\\AppData\\Roaming\\npm;C:\\Users\\92331\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+2026-01-21 21:15:36,243 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-21 21:15:36,243 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-21 21:15:51,577 - modules.active - INFO - Banner grabbing completed. 0 banners found
+2026-01-21 21:15:51,578 - modules.active - INFO - Starting technology detection for google.com
+2026-01-21 21:15:54,901 - modules.active - INFO - Technology detection completed. 3 technologies found
+2026-01-21 21:15:54,911 - __main__ - INFO - Active reconnaissance completed
+2026-01-21 21:15:55,650 - modules.reporter - INFO - Generating PDF report: reports/google_com_20260121_211554.pdf
+2026-01-21 21:15:55,661 - modules.reporter - INFO - PDF report generated successfully: reports/google_com_20260121_211554.pdf
+2026-01-21 21:15:55,663 - __main__ - INFO - Report generated: reports/google_com_20260121_211554.pdf
+2026-01-21 21:15:55,665 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-21 21:50:06,684 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-21 21:50:06,684 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-21 21:50:08,896 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-21 21:50:23,809 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-21 21:50:23,809 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-21 21:50:34,177 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 10.113 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-21 21:50:34,194 - modules.passive - INFO - DNS enumeration completed
+2026-01-21 21:50:34,194 - modules.passive - INFO - Starting API-free subdomain enumeration for google.com
+2026-01-21 21:51:14,761 - modules.passive - INFO - Subdomain enumeration completed. Total: 44
+2026-01-21 21:51:14,761 - __main__ - INFO - Passive reconnaissance completed
+2026-01-21 21:51:14,772 - modules.active - INFO - Resolved google.com to 142.250.187.78
+2026-01-21 21:51:14,772 - modules.active - INFO - Starting port scan on google.com
+2026-01-21 21:51:14,797 - modules.active - ERROR - Nmap executable not found
+2026-01-21 21:51:35,473 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-21 21:51:35,473 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-21 21:51:41,057 - modules.active - INFO - Banner grabbed from port 80
+2026-01-21 21:51:56,463 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-21 21:51:56,463 - modules.active - INFO - Starting technology detection for google.com
+2026-01-21 21:51:58,931 - modules.active - INFO - Technology detection completed. 4 technologies found
+2026-01-21 21:51:58,931 - __main__ - INFO - Active reconnaissance completed
+2026-01-21 21:51:59,613 - modules.reporter - INFO - Generating PDF report: reports/google_com_20260121_215158.pdf
+2026-01-21 21:51:59,633 - modules.reporter - INFO - PDF report generated successfully: reports/google_com_20260121_215158.pdf
+2026-01-21 21:51:59,633 - __main__ - INFO - Report generated: reports/google_com_20260121_215158.pdf
+2026-01-21 21:51:59,642 - __main__ - INFO - === Reconnaissance Tool Finished ===

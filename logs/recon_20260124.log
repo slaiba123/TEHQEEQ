@@ -1,0 +1,264 @@
+2026-01-24 19:50:03,144 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 19:50:03,146 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-24 19:50:06,771 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-24 19:50:10,462 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-24 19:50:10,462 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-24 19:50:11,230 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 19:50:11,230 - modules.passive - INFO - Starting API-free subdomain enumeration for google.com
+2026-01-24 19:50:33,412 - modules.passive - INFO - Subdomain enumeration completed. Total: 44
+2026-01-24 19:50:33,412 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 19:50:33,535 - modules.active - INFO - Resolved google.com to 142.250.187.78
+2026-01-24 19:50:33,535 - modules.active - INFO - Starting port scan on google.com
+2026-01-24 19:50:33,550 - modules.active - ERROR - Nmap executable not found
+2026-01-24 19:50:53,752 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-24 19:50:53,752 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-24 19:50:59,187 - modules.active - INFO - Banner grabbed from port 80
+2026-01-24 19:51:14,232 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-24 19:51:14,232 - modules.active - INFO - Starting technology detection for google.com
+2026-01-24 19:51:15,980 - modules.active - INFO - Technology detection completed. 4 technologies found
+2026-01-24 19:51:15,992 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 19:51:18,150 - modules.reporter - INFO - Generating PDF report: reports/google_com_20260124_195115.pdf
+2026-01-24 19:51:18,165 - modules.reporter - INFO - PDF report generated successfully: reports/google_com_20260124_195115.pdf
+2026-01-24 19:51:18,165 - __main__ - INFO - Report generated: reports/google_com_20260124_195115.pdf
+2026-01-24 19:51:18,165 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-24 19:56:38,535 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 19:56:38,535 - __main__ - INFO - Target validated: neduet.edu.pk (type: domain)
+2026-01-24 19:56:40,402 - modules.passive - INFO - Starting WHOIS lookup for neduet.edu.pk
+2026-01-24 19:56:51,587 - modules.passive - INFO - Starting DNS enumeration for neduet.edu.pk
+2026-01-24 19:56:52,355 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 19:56:52,355 - modules.passive - INFO - Starting API-free subdomain enumeration for neduet.edu.pk
+2026-01-24 19:57:08,239 - modules.passive - INFO - Subdomain enumeration completed. Total: 375
+2026-01-24 19:57:08,242 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 19:57:08,255 - modules.active - WARNING - Could not resolve neduet.edu.pk: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,257 - modules.active - INFO - Starting port scan on neduet.edu.pk
+2026-01-24 19:57:08,257 - modules.active - ERROR - Error scanning port 21: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,257 - modules.active - ERROR - Error scanning port 22: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,265 - modules.active - ERROR - Error scanning port 23: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,265 - modules.active - ERROR - Error scanning port 25: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,265 - modules.active - ERROR - Error scanning port 53: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,267 - modules.active - ERROR - Error scanning port 80: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,267 - modules.active - ERROR - Error scanning port 110: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,267 - modules.active - ERROR - Error scanning port 143: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,267 - modules.active - ERROR - Error scanning port 443: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,267 - modules.active - ERROR - Error scanning port 445: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,267 - modules.active - ERROR - Error scanning port 3306: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,267 - modules.active - ERROR - Error scanning port 3389: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,267 - modules.active - ERROR - Error scanning port 5432: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,270 - modules.active - ERROR - Error scanning port 8080: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,273 - modules.active - ERROR - Error scanning port 8443: [Errno 11001] getaddrinfo failed
+2026-01-24 19:57:08,279 - modules.active - INFO - Port scan completed. 0 ports open
+2026-01-24 19:57:08,279 - modules.active - INFO - Starting banner grabbing for neduet.edu.pk
+2026-01-24 19:57:08,281 - modules.active - INFO - Starting technology detection for neduet.edu.pk
+2026-01-24 19:57:08,281 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 19:57:08,722 - modules.reporter - INFO - Generating PDF report: reports/neduet_edu_pk_20260124_195708.pdf
+2026-01-24 19:57:08,737 - modules.reporter - INFO - PDF report generated successfully: reports/neduet_edu_pk_20260124_195708.pdf
+2026-01-24 19:57:08,737 - __main__ - INFO - Report generated: reports/neduet_edu_pk_20260124_195708.pdf
+2026-01-24 19:57:08,737 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-24 20:47:27,533 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 20:47:27,534 - __main__ - INFO - Target validated: www.neduet.edu.pk (type: domain)
+2026-01-24 20:47:29,808 - modules.passive - INFO - Starting WHOIS lookup for www.neduet.edu.pk
+2026-01-24 20:47:40,981 - modules.passive - INFO - Starting DNS enumeration for www.neduet.edu.pk
+2026-01-24 20:47:41,717 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 20:47:41,717 - modules.passive - INFO - Starting API-free subdomain enumeration for www.neduet.edu.pk
+2026-01-24 20:48:01,433 - modules.passive - INFO - Subdomain enumeration completed. Total: 0
+2026-01-24 20:48:01,433 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 20:48:01,446 - modules.active - INFO - Resolved www.neduet.edu.pk to 111.68.110.16
+2026-01-24 20:48:01,446 - modules.active - INFO - Starting port scan on www.neduet.edu.pk
+2026-01-24 20:48:23,675 - modules.active - INFO - Port scan completed. 4 ports open
+2026-01-24 20:48:23,675 - modules.active - INFO - Starting banner grabbing for www.neduet.edu.pk
+2026-01-24 20:48:25,750 - modules.active - INFO - Banner grabbed from port 25
+2026-01-24 20:48:27,834 - modules.active - INFO - Banner grabbed from port 110
+2026-01-24 20:48:37,886 - modules.active - INFO - Banner grabbing completed. 2 banners found
+2026-01-24 20:48:37,886 - modules.active - INFO - Starting technology detection for www.neduet.edu.pk
+2026-01-24 20:48:38,691 - modules.active - INFO - Technology detection completed. 7 technologies found
+2026-01-24 20:48:38,691 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 20:48:39,733 - modules.reporter - INFO - Generating PDF report: reports/www_neduet_edu_pk_20260124_204838.pdf
+2026-01-24 20:48:39,753 - modules.reporter - INFO - PDF report generated successfully: reports/www_neduet_edu_pk_20260124_204838.pdf
+2026-01-24 20:48:39,754 - __main__ - INFO - Report generated: reports/www_neduet_edu_pk_20260124_204838.pdf
+2026-01-24 20:48:39,758 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-24 21:03:52,769 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 21:03:52,769 - __main__ - INFO - Target validated: neduet.edu.pk (type: domain)
+2026-01-24 21:03:55,889 - modules.passive - INFO - Starting WHOIS lookup for neduet.edu.pk
+2026-01-24 21:03:55,891 - modules.passive - INFO - Using PKNIC API for .pk domain: neduet.edu.pk
+2026-01-24 21:03:57,183 - modules.passive - INFO - Starting DNS enumeration for neduet.edu.pk
+2026-01-24 21:03:59,070 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 21:03:59,070 - modules.passive - INFO - Starting API-free subdomain enumeration for neduet.edu.pk
+2026-01-24 21:04:23,497 - modules.passive - INFO - Subdomain enumeration completed. Total: 375
+2026-01-24 21:04:23,497 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 21:04:23,513 - modules.active - WARNING - Could not resolve neduet.edu.pk: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,513 - modules.active - INFO - Starting port scan on neduet.edu.pk
+2026-01-24 21:04:23,517 - modules.active - ERROR - Error scanning port 21: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,519 - modules.active - ERROR - Error scanning port 22: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,519 - modules.active - ERROR - Error scanning port 23: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,523 - modules.active - ERROR - Error scanning port 25: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,526 - modules.active - ERROR - Error scanning port 53: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,527 - modules.active - ERROR - Error scanning port 80: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,529 - modules.active - ERROR - Error scanning port 110: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,529 - modules.active - ERROR - Error scanning port 143: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,530 - modules.active - ERROR - Error scanning port 443: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,530 - modules.active - ERROR - Error scanning port 445: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,531 - modules.active - ERROR - Error scanning port 3306: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,532 - modules.active - ERROR - Error scanning port 3389: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,532 - modules.active - ERROR - Error scanning port 5432: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,532 - modules.active - ERROR - Error scanning port 8080: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,533 - modules.active - ERROR - Error scanning port 8443: [Errno 11001] getaddrinfo failed
+2026-01-24 21:04:23,534 - modules.active - INFO - Port scan completed. 0 ports open
+2026-01-24 21:04:23,534 - modules.active - INFO - Starting banner grabbing for neduet.edu.pk
+2026-01-24 21:04:23,536 - modules.active - INFO - Starting technology detection for neduet.edu.pk
+2026-01-24 21:04:23,537 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 21:04:24,052 - modules.reporter - INFO - Generating PDF report: reports/neduet_edu_pk_20260124_210423.pdf
+2026-01-24 21:04:24,058 - modules.reporter - INFO - PDF report generated successfully: reports/neduet_edu_pk_20260124_210423.pdf
+2026-01-24 21:04:24,058 - __main__ - INFO - Report generated: reports/neduet_edu_pk_20260124_210423.pdf
+2026-01-24 21:04:24,067 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-24 21:07:12,818 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 21:07:12,831 - __main__ - INFO - Target validated: www.pakistan.gov.pk (type: domain)
+2026-01-24 21:07:15,077 - modules.passive - INFO - Starting WHOIS lookup for www.pakistan.gov.pk
+2026-01-24 21:07:15,094 - modules.passive - INFO - Using PKNIC API for .pk domain: www.pakistan.gov.pk
+2026-01-24 21:07:17,152 - modules.passive - INFO - Starting DNS enumeration for www.pakistan.gov.pk
+2026-01-24 21:07:18,267 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 21:07:18,274 - modules.passive - INFO - Starting API-free subdomain enumeration for www.pakistan.gov.pk
+2026-01-24 21:07:52,620 - modules.passive - INFO - Subdomain enumeration completed. Total: 0
+2026-01-24 21:07:52,620 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 21:07:52,633 - modules.active - INFO - Resolved www.pakistan.gov.pk to 203.101.184.84
+2026-01-24 21:07:52,633 - modules.active - INFO - Starting port scan on www.pakistan.gov.pk
+2026-01-24 21:08:12,947 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-24 21:08:12,947 - modules.active - INFO - Starting banner grabbing for www.pakistan.gov.pk
+2026-01-24 21:08:18,193 - modules.active - INFO - Banner grabbed from port 80
+2026-01-24 21:08:33,335 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-24 21:08:33,336 - modules.active - INFO - Starting technology detection for www.pakistan.gov.pk
+2026-01-24 21:08:34,069 - modules.active - INFO - Technology detection completed. 9 technologies found
+2026-01-24 21:08:34,073 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 21:08:34,814 - modules.reporter - INFO - Generating PDF report: reports/www_pakistan_gov_pk_20260124_210834.pdf
+2026-01-24 21:08:34,835 - modules.reporter - INFO - PDF report generated successfully: reports/www_pakistan_gov_pk_20260124_210834.pdf
+2026-01-24 21:08:34,836 - __main__ - INFO - Report generated: reports/www_pakistan_gov_pk_20260124_210834.pdf
+2026-01-24 21:08:34,839 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-24 21:08:43,767 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 21:08:43,767 - __main__ - INFO - Target validated: neduet.edu.pk (type: domain)
+2026-01-24 21:08:46,135 - modules.passive - INFO - Starting WHOIS lookup for neduet.edu.pk
+2026-01-24 21:08:46,146 - modules.passive - INFO - Using PKNIC API for .pk domain: neduet.edu.pk
+2026-01-24 21:08:47,280 - modules.passive - INFO - PKNIC WHOIS lookup completed successfully
+2026-01-24 21:08:47,282 - modules.passive - INFO - Starting DNS enumeration for neduet.edu.pk
+2026-01-24 21:08:47,603 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 21:08:47,604 - modules.passive - INFO - Starting API-free subdomain enumeration for neduet.edu.pk
+2026-01-24 21:08:55,292 - modules.passive - INFO - Subdomain enumeration completed. Total: 375
+2026-01-24 21:08:55,292 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 21:08:55,304 - modules.active - WARNING - Could not resolve neduet.edu.pk: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,304 - modules.active - INFO - Starting port scan on neduet.edu.pk
+2026-01-24 21:08:55,306 - modules.active - ERROR - Error scanning port 21: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,308 - modules.active - ERROR - Error scanning port 22: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,309 - modules.active - ERROR - Error scanning port 23: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,309 - modules.active - ERROR - Error scanning port 25: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,311 - modules.active - ERROR - Error scanning port 53: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,311 - modules.active - ERROR - Error scanning port 80: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,312 - modules.active - ERROR - Error scanning port 110: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,313 - modules.active - ERROR - Error scanning port 143: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,317 - modules.active - ERROR - Error scanning port 443: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,318 - modules.active - ERROR - Error scanning port 445: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,319 - modules.active - ERROR - Error scanning port 3306: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,320 - modules.active - ERROR - Error scanning port 3389: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,320 - modules.active - ERROR - Error scanning port 5432: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,320 - modules.active - ERROR - Error scanning port 8080: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,322 - modules.active - ERROR - Error scanning port 8443: [Errno 11001] getaddrinfo failed
+2026-01-24 21:08:55,324 - modules.active - INFO - Port scan completed. 0 ports open
+2026-01-24 21:08:55,325 - modules.active - INFO - Starting banner grabbing for neduet.edu.pk
+2026-01-24 21:08:55,326 - modules.active - INFO - Starting technology detection for neduet.edu.pk
+2026-01-24 21:08:55,327 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 21:08:55,652 - modules.reporter - INFO - Generating PDF report: reports/neduet_edu_pk_20260124_210855.pdf
+2026-01-24 21:08:55,659 - modules.reporter - INFO - PDF report generated successfully: reports/neduet_edu_pk_20260124_210855.pdf
+2026-01-24 21:08:55,660 - __main__ - INFO - Report generated: reports/neduet_edu_pk_20260124_210855.pdf
+2026-01-24 21:08:55,663 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-24 21:11:57,882 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 21:11:57,883 - __main__ - INFO - Target validated: www.neduet.edu.pk (type: domain)
+2026-01-24 21:12:02,237 - modules.passive - INFO - Starting WHOIS lookup for www.neduet.edu.pk
+2026-01-24 21:12:02,239 - modules.passive - INFO - Using PKNIC API for .pk domain: www.neduet.edu.pk
+2026-01-24 21:12:03,786 - modules.passive - INFO - PKNIC WHOIS lookup completed successfully
+2026-01-24 21:12:03,790 - modules.passive - INFO - Starting DNS enumeration for www.neduet.edu.pk
+2026-01-24 21:12:04,494 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 21:12:04,495 - modules.passive - INFO - Starting API-free subdomain enumeration for www.neduet.edu.pk
+2026-01-24 21:12:30,912 - modules.passive - INFO - Subdomain enumeration completed. Total: 0
+2026-01-24 21:12:30,912 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 21:12:30,940 - modules.active - INFO - Resolved www.neduet.edu.pk to 111.68.110.16
+2026-01-24 21:12:30,940 - modules.active - INFO - Starting port scan on www.neduet.edu.pk
+2026-01-24 21:12:53,111 - modules.active - INFO - Port scan completed. 4 ports open
+2026-01-24 21:12:53,113 - modules.active - INFO - Starting banner grabbing for www.neduet.edu.pk
+2026-01-24 21:12:55,212 - modules.active - INFO - Banner grabbed from port 25
+2026-01-24 21:12:57,318 - modules.active - INFO - Banner grabbed from port 110
+2026-01-24 21:13:07,356 - modules.active - INFO - Banner grabbing completed. 2 banners found
+2026-01-24 21:13:07,356 - modules.active - INFO - Starting technology detection for www.neduet.edu.pk
+2026-01-24 21:13:08,012 - modules.active - INFO - Technology detection completed. 7 technologies found
+2026-01-24 21:13:08,012 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 21:13:08,468 - modules.reporter - INFO - Generating PDF report: reports/www_neduet_edu_pk_20260124_211308.pdf
+2026-01-24 21:13:08,485 - modules.reporter - INFO - PDF report generated successfully: reports/www_neduet_edu_pk_20260124_211308.pdf
+2026-01-24 21:13:08,485 - __main__ - INFO - Report generated: reports/www_neduet_edu_pk_20260124_211308.pdf
+2026-01-24 21:13:08,492 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-24 21:33:21,715 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 21:33:21,715 - __main__ - INFO - Target validated: neduet.edu.pk (type: domain)
+2026-01-24 21:33:24,687 - modules.passive - INFO - Starting WHOIS lookup for neduet.edu.pk
+2026-01-24 21:33:24,691 - modules.passive - INFO - Using PKNIC API for .pk domain: neduet.edu.pk
+2026-01-24 21:33:26,343 - modules.passive - INFO - PKNIC WHOIS lookup completed successfully
+2026-01-24 21:33:26,343 - modules.passive - INFO - Starting DNS enumeration for neduet.edu.pk
+2026-01-24 21:33:28,076 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 21:33:28,076 - modules.passive - INFO - Starting API-free subdomain enumeration for neduet.edu.pk
+2026-01-24 21:33:55,534 - modules.passive - INFO - Subdomain enumeration completed. Total: 375
+2026-01-24 21:33:55,534 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 21:33:55,548 - modules.active - WARNING - Could not resolve neduet.edu.pk directly
+2026-01-24 21:33:55,580 - modules.active - INFO - Auto-switched to www.neduet.edu.pk (111.68.110.16)
+2026-01-24 21:33:55,580 - modules.active - INFO - Starting port scan on www.neduet.edu.pk
+2026-01-24 21:34:17,710 - modules.active - INFO - Port scan completed. 4 ports open
+2026-01-24 21:34:17,710 - modules.active - INFO - Starting banner grabbing for www.neduet.edu.pk
+2026-01-24 21:34:19,819 - modules.active - INFO - Banner grabbed from port 25
+2026-01-24 21:34:21,911 - modules.active - INFO - Banner grabbed from port 110
+2026-01-24 21:34:31,958 - modules.active - INFO - Banner grabbing completed. 2 banners found
+2026-01-24 21:34:31,958 - modules.active - INFO - Starting technology detection for www.neduet.edu.pk
+2026-01-24 21:34:32,709 - modules.active - INFO - Technology detection completed. 7 technologies found
+2026-01-24 21:34:32,710 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 21:34:33,389 - modules.reporter - INFO - Generating PDF report: reports/neduet_edu_pk_20260124_213432.pdf
+2026-01-24 21:34:33,413 - modules.reporter - INFO - PDF report generated successfully: reports/neduet_edu_pk_20260124_213432.pdf
+2026-01-24 21:34:33,413 - __main__ - INFO - Report generated: reports/neduet_edu_pk_20260124_213432.pdf
+2026-01-24 21:34:33,420 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-24 21:46:50,105 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 21:46:50,105 - __main__ - INFO - Target validated: www.pakistan.gov.pk (type: domain)
+2026-01-24 21:46:52,615 - modules.passive - INFO - Starting WHOIS lookup for www.pakistan.gov.pk
+2026-01-24 21:46:52,618 - modules.passive - INFO - Using PKNIC API for .pk domain: www.pakistan.gov.pk
+2026-01-24 21:46:55,994 - modules.passive - INFO - PKNIC WHOIS lookup completed successfully
+2026-01-24 21:46:55,999 - modules.passive - INFO - Starting DNS enumeration for www.pakistan.gov.pk
+2026-01-24 21:46:58,874 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 21:46:58,874 - modules.passive - INFO - Starting API-free subdomain enumeration for www.pakistan.gov.pk
+2026-01-24 21:47:34,312 - modules.passive - INFO - Subdomain enumeration completed. Total: 0
+2026-01-24 21:47:34,312 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 21:47:34,406 - modules.active - INFO - Resolved www.pakistan.gov.pk to 203.101.184.84
+2026-01-24 21:47:34,408 - modules.active - INFO - Starting port scan on www.pakistan.gov.pk
+2026-01-24 21:47:54,960 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-24 21:47:54,960 - modules.active - INFO - Starting banner grabbing for www.pakistan.gov.pk
+2026-01-24 21:48:00,220 - modules.active - INFO - Banner grabbed from port 80
+2026-01-24 21:48:15,383 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-24 21:48:15,383 - modules.active - INFO - Starting technology detection for www.pakistan.gov.pk
+2026-01-24 21:48:16,197 - modules.active - INFO - Technology detection completed. 9 technologies found
+2026-01-24 21:48:16,205 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 21:48:16,726 - modules.reporter - INFO - Generating PDF report: reports/www_pakistan_gov_pk_20260124_214816.pdf
+2026-01-24 21:48:16,744 - modules.reporter - INFO - PDF report generated successfully: reports/www_pakistan_gov_pk_20260124_214816.pdf
+2026-01-24 21:48:16,744 - __main__ - INFO - Report generated: reports/www_pakistan_gov_pk_20260124_214816.pdf
+2026-01-24 21:48:16,744 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-24 21:59:49,054 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-24 21:59:49,054 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-24 21:59:52,388 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-24 22:00:02,322 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-24 22:00:02,322 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-24 22:00:12,932 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 10.101 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-24 22:00:12,951 - modules.passive - INFO - DNS enumeration completed
+2026-01-24 22:00:12,951 - modules.passive - INFO - Starting API-free subdomain enumeration for google.com
+2026-01-24 22:00:49,939 - modules.passive - INFO - Subdomain enumeration completed. Total: 44
+2026-01-24 22:00:49,939 - __main__ - INFO - Passive reconnaissance completed
+2026-01-24 22:00:49,969 - modules.active - INFO - Resolved google.com to 142.250.187.78
+2026-01-24 22:00:49,972 - modules.active - INFO - Starting port scan on google.com
+2026-01-24 22:01:10,112 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-24 22:01:10,113 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-24 22:01:15,626 - modules.active - INFO - Banner grabbed from port 80
+2026-01-24 22:01:30,716 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-24 22:01:30,717 - modules.active - INFO - Starting technology detection for google.com
+2026-01-24 22:01:32,486 - modules.active - INFO - Technology detection completed. 4 technologies found
+2026-01-24 22:01:32,498 - __main__ - INFO - Active reconnaissance completed
+2026-01-24 22:01:34,366 - modules.reporter - INFO - Generating PDF report: reports/google_com_20260124_220132.pdf
+2026-01-24 22:01:34,377 - modules.reporter - INFO - PDF report generated successfully: reports/google_com_20260124_220132.pdf
+2026-01-24 22:01:34,378 - __main__ - INFO - Report generated: reports/google_com_20260124_220132.pdf
+2026-01-24 22:01:34,381 - __main__ - INFO - === Reconnaissance Tool Finished ===
