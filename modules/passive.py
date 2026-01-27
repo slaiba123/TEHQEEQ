@@ -1368,7 +1368,7 @@ class PassiveRecon:
                             else:
                                 print("❌ Domain not found in PKNIC registry")
                                 print("   ℹ️  Note: Some .edu.pk domains may have limited WHOIS data")
-                                print("   ✅ DNS records confirm domain exists\n")
+                                print("    DNS records confirm domain exists\n")
                                 self.results['whois']['error'] = "Limited WHOIS data available"
                                 self.results['whois']['note'] = "Domain exists but WHOIS data unavailable via API"
                                 return {}
@@ -1713,7 +1713,7 @@ class PassiveRecon:
                                 domain = value.replace('*.', '').lower()
                                 if domain.endswith(self.domain):
                                     subdomains.add(domain)
-                                    print(f"      ✅ {domain}")
+                                    print(f"      -{domain}")
                     
                     for sub in cert.get('subject', ()):
                         for key, value in sub:
