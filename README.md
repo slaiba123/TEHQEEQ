@@ -143,23 +143,23 @@ Miscellaneous:
 🔍 WHOIS LOOKUP: example.com
 ============================================================
 
-📋 Domain Name: example.com
-🏢 Organization: Example Organization
-📝 Registrar: Example Registrar Inc.
-📅 Created: 1995-08-14 04:00:00
-📅 Expires: 2025-08-13 04:00:00
+Domain Name: example.com
+Organization: Example Organization
+Registrar: Example Registrar Inc.
+Created: 1995-08-14 04:00:00
+Expires: 2025-08-13 04:00:00
 
 ============================================================
 🔍 PORT SCANNING: example.com (93.184.216.34)
 ============================================================
 
 Progress: 5/15 ports scanned...
-✅ Port    80 | OPEN      | HTTP
-✅ Port   443 | OPEN      | HTTPS
+Port    80 | OPEN      | HTTP
+Port   443 | OPEN      | HTTPS
 Progress: 15/15 ports scanned...
 
-📊 SCAN COMPLETE
-✅ Open Ports: 2/15
+SCAN COMPLETE
+Open Ports: 2/15
 ```
 
 ## ⚙️ Configuration
@@ -252,26 +252,12 @@ Created for security research and educational purposes.
 
 # TEHQEEQ - تحقیق
 
+<img width="924" height="308" alt="tehqeeq" src="https://github.com/user-attachments/assets/69d46c82-ac62-4ad9-863b-2c50a94fa408" />
+
+
+
 <div align="center">
-
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║   ████████╗███████╗██╗  ██╗ ██████╗ ███████╗███████╗ ██████╗    ║
-║   ╚══██╔══╝██╔════╝██║  ██║██╔═══██╗██╔════╝██╔════╝██╔═══██╗   ║
-║      ██║   █████╗  ███████║██║   ██║█████╗  █████╗  ██║   ██║   ║
-║      ██║   ██╔══╝  ██╔══██║██║▄▄ ██║██╔══╝  ██╔══╝  ██║▄▄ ██║   ║
-║      ██║   ███████╗██║  ██║╚██████╔╝███████╗███████╗╚██████╔╝   ║
-║      ╚═╝   ╚══════╝╚═╝  ╚═╝ ╚══▀▀═╝ ╚══════╝╚══════╝ ╚══▀▀═╝    ║
-║                                                                  ║
-║           تحقیق - Advanced Network Reconnaissance Tool          ║
-║                    For Authorized Security Testing               ║
-║                              v2.0                                ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
-**Advanced Network Intelligence Gathering Framework**
+Advanced Network Intelligence Gathering Framework
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -289,16 +275,15 @@ Created for security research and educational purposes.
 
 ### 🎯 Key Highlights
 
-- 🇵🇰 **Pakistani Domain Support** - Native PKNIC API integration for .pk domains
-- 🎨 **Beautiful Terminal UI** - Professional, color-coded output with descriptive messages
-- 🔍 **Comprehensive Scanning** - WHOIS, DNS, subdomains, ports, banners, technologies
-- 📊 **Multiple Report Formats** - PDF, HTML, JSON, and TXT reports
-- ✅ **Auto Verification** - Built-in result verification against external sources
-- 🚀 **Fast & Efficient** - Optimized scanning with minimal false positives
+- **Pakistani Domain Support** - Native PKNIC API integration for .pk domains
+- **Comprehensive Scanning** - WHOIS, DNS, subdomains, ports, banners, technologies
+- **Multiple Report Formats** - PDF, HTML, JSON, and TXT reports
+- **Auto Verification** - Built-in result verification against external sources
+- **Fast & Efficient** - Optimized scanning with minimal false positives
 
 ---
 
-## ✨ Features
+## ✨Features
 
 ### 🔐 Passive Reconnaissance
 - **WHOIS Lookup**
@@ -711,18 +696,10 @@ pip install -r requirements.txt
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-## 👥 Authors
-
-**TEHQEEQ Development Team**
-- Network reconnaissance specialists
-- Security researchers
-- Open source contributors
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **PKNIC** for providing API access for .pk domains
 - **RedScout** for inspiration on terminal output design
@@ -731,21 +708,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support
+## Support & Queries 
 
-- 📧 Email: support@tehqeeq.io
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/tehqeeq/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/tehqeeq/discussions)
-- 📖 Documentation: [Wiki](https://github.com/yourusername/tehqeeq/wiki)
-
----
-
-## 🌍 Community
-
-Join our community:
-- 🐦 Twitter: [@tehqeeq_tool](https://twitter.com/tehqeeq_tool)
-- 💼 LinkedIn: [TEHQEEQ Network Security](https://linkedin.com/company/tehqeeq)
-- 📺 YouTube: [TEHQEEQ Tutorials](https://youtube.com/@tehqeeq)
+- 📧 Email: laiba244m@gmail.com
 
 ---
 
