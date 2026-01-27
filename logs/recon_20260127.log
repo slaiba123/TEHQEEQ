@@ -1,0 +1,130 @@
+2026-01-27 20:41:36,010 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 20:41:36,010 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 20:41:42,153 - root - ERROR - Fatal error occurred
+Traceback (most recent call last):
+  File "C:\Users\92331\Desktop\RECON TOOL\main.py", line 407, in <module>
+    main()
+  File "C:\Users\92331\Desktop\RECON TOOL\main.py", line 343, in main
+    p = PassiveRecon(target, formatter=formatter)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PassiveRecon.__init__() got an unexpected keyword argument 'formatter'
+2026-01-27 20:51:12,597 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 20:51:12,597 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 20:51:15,497 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-27 20:51:17,407 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 20:51:17,407 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-27 20:51:32,745 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 15.106 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-27 20:51:32,767 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 20:51:32,767 - modules.passive - INFO - Starting subdomain enumeration for google.com
+2026-01-27 20:51:56,029 - modules.passive - INFO - Subdomain enumeration completed. Total: 44
+2026-01-27 20:51:56,029 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 20:51:56,044 - modules.active - INFO - Resolved google.com to 142.250.184.110
+2026-01-27 20:51:56,045 - modules.active - INFO - Starting port scan on google.com
+2026-01-27 20:52:16,369 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-27 20:52:16,369 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-27 20:52:22,916 - modules.active - INFO - Banner grabbed from port 80
+2026-01-27 20:52:38,054 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-27 20:52:38,055 - modules.active - INFO - Starting technology detection for google.com
+2026-01-27 20:52:40,034 - modules.active - INFO - Technology detection completed. 4 technologies found
+2026-01-27 20:52:40,046 - __main__ - INFO - Active reconnaissance completed
+2026-01-27 20:52:40,049 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:01:38,501 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:01:38,506 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:01:41,760 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-27 21:01:44,072 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:01:44,073 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-27 21:01:59,304 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 15.112 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-27 21:01:59,316 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:01:59,317 - modules.passive - INFO - Starting subdomain enumeration for google.com
+2026-01-27 21:02:20,201 - modules.passive - INFO - Subdomain enumeration completed. Total: 43
+2026-01-27 21:02:20,201 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:02:20,216 - modules.active - INFO - Resolved google.com to 142.250.184.110
+2026-01-27 21:02:20,217 - modules.active - INFO - Starting port scan on google.com
+2026-01-27 21:02:40,503 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-27 21:02:40,503 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-27 21:02:46,024 - modules.active - INFO - Banner grabbed from port 80
+2026-01-27 21:03:01,104 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-27 21:03:01,104 - modules.active - INFO - Starting technology detection for google.com
+2026-01-27 21:03:04,045 - modules.active - INFO - Technology detection completed. 4 technologies found
+2026-01-27 21:03:04,054 - __main__ - INFO - Active reconnaissance completed
+2026-01-27 21:03:04,058 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:05:42,601 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:05:42,601 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:05:56,471 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-27 21:05:58,045 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:05:58,045 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-27 21:06:13,336 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 15.104 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-27 21:06:13,364 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:06:13,364 - modules.passive - INFO - Starting subdomain enumeration for google.com
+2026-01-27 21:06:29,144 - modules.passive - INFO - Subdomain enumeration completed. Total: 44
+2026-01-27 21:06:29,146 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:06:29,188 - modules.active - INFO - Resolved google.com to 142.250.184.110
+2026-01-27 21:06:29,191 - modules.active - INFO - Starting port scan on google.com
+2026-01-27 21:06:43,468 - modules.active - WARNING - Port scan interrupted by user
+2026-01-27 21:06:43,470 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-27 21:06:43,470 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-27 21:06:52,003 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:06:52,004 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:06:54,120 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-27 21:06:55,275 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:06:55,275 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-27 21:07:10,463 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 15.102 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-27 21:07:10,487 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:07:10,487 - modules.passive - INFO - Starting subdomain enumeration for google.com
+2026-01-27 21:07:15,996 - modules.passive - INFO - Subdomain enumeration completed. Total: 44
+2026-01-27 21:07:15,996 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:07:15,999 - modules.active - INFO - Resolved google.com to 142.250.184.110
+2026-01-27 21:07:15,999 - modules.active - INFO - Starting port scan on google.com
+2026-01-27 21:07:36,207 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-27 21:07:36,207 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-27 21:07:41,747 - modules.active - INFO - Banner grabbed from port 80
+2026-01-27 21:07:56,880 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-27 21:07:56,880 - modules.active - INFO - Starting technology detection for google.com
+2026-01-27 21:07:58,568 - modules.active - INFO - Technology detection completed. 4 technologies found
+2026-01-27 21:07:58,582 - __main__ - INFO - Active reconnaissance completed
+2026-01-27 21:07:58,585 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:09:37,513 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:09:37,514 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:09:49,788 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:09:49,788 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:09:59,957 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:09:59,957 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:10:11,228 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:10:11,228 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:10:29,553 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:10:29,553 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:12:49,699 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:12:49,710 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:14:26,605 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:14:26,605 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:15:08,630 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:15:08,630 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:15:37,923 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:15:37,923 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:15:49,417 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:15:49,417 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:15:56,371 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:15:56,371 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:17:03,123 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:17:03,123 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:17:04,918 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-27 21:17:06,706 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:17:06,706 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-27 21:17:22,100 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 15.107 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-27 21:17:22,141 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:17:22,141 - modules.passive - INFO - Starting subdomain enumeration for google.com
+2026-01-27 21:17:41,547 - modules.passive - INFO - Subdomain enumeration completed. Total: 44
+2026-01-27 21:17:41,547 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:17:41,564 - modules.active - INFO - Resolved google.com to 142.250.184.110
+2026-01-27 21:17:41,571 - modules.active - INFO - Starting port scan on google.com
+2026-01-27 21:18:01,762 - modules.active - INFO - Port scan completed. 5 ports open
+2026-01-27 21:18:01,762 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-27 21:18:07,406 - modules.active - INFO - Banner grabbed from port 80
+2026-01-27 21:18:22,554 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-27 21:18:22,554 - modules.active - INFO - Starting technology detection for google.com
+2026-01-27 21:18:24,912 - modules.active - INFO - Technology detection completed. 4 technologies found
+2026-01-27 21:18:24,926 - __main__ - INFO - Active reconnaissance completed
+2026-01-27 21:18:24,931 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:24:35,389 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:24:35,389 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:24:37,142 - modules.passive - INFO - Starting WHOIS lookup for google.com

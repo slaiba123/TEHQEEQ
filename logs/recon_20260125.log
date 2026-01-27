@@ -21,3 +21,15 @@
 2026-01-25 19:51:33,179 - modules.reporter - INFO - PDF report generated successfully: reports/google_com_20260125_195130.pdf
 2026-01-25 19:51:33,179 - __main__ - INFO - Report generated: reports/google_com_20260125_195130.pdf
 2026-01-25 19:51:33,185 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-25 20:24:10,885 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-25 20:24:10,888 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-25 20:24:19,042 - root - ERROR - Fatal error occurred
+Traceback (most recent call last):
+  File "C:\Users\92331\Desktop\RECON TOOL\main.py", line 407, in <module>
+    main()
+  File "C:\Users\92331\Desktop\RECON TOOL\main.py", line 343, in main
+    p = PassiveRecon(target, formatter=formatter)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PassiveRecon.__init__() got an unexpected keyword argument 'formatter'
+2026-01-25 20:40:44,741 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-25 20:40:44,741 - __main__ - INFO - Target validated: google.com (type: domain)

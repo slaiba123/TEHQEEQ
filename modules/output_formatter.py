@@ -38,14 +38,15 @@ class OutputFormatter:
         banner = f"""{Fore.CYAN}{Style.BRIGHT}
 ╔══════════════════════════════════════════════════════════════════╗
 ║                                                                  ║
-║   ████████╗███████╗██╗  ██╗ ██████╗ ███████╗███████╗ ██████╗    ║
-║   ╚══██╔══╝██╔════╝██║  ██║██╔═══██╗██╔════╝██╔════╝██╔═══██╗   ║
-║      ██║   █████╗  ███████║██║   ██║█████╗  █████╗  ██║   ██║   ║
-║      ██║   ██╔══╝  ██╔══██║██║▄▄ ██║██╔══╝  ██╔══╝  ██║▄▄ ██║   ║
-║      ██║   ███████╗██║  ██║╚██████╔╝███████╗███████╗╚██████╔╝   ║
-║      ╚═╝   ╚══════╝╚═╝  ╚═╝ ╚══▀▀═╝ ╚══════╝╚══════╝ ╚══▀▀═╝    ║
+║   ████████╗███████╗██╗  ██╗ ██████╗ ███████╗███████╗ ██████╗     ║
+║   ╚══██╔══╝██╔════╝██║  ██║██╔═══██╗██╔════╝██╔════╝██╔═══██╗    ║
+║      ██║   █████╗  ███████║██║   ██║█████╗  █████╗  ██║   ██║    ║
+║      ██║   ██╔══╝  ██╔══██║██║▄▄ ██║██╔══╝  ██╔══╝  ██║▄▄ ██║    ║
+║      ██║   ███████╗██║  ██║╚██████╔╝███████╗███████╗╚██████╔╝    ║
+║      ╚═╝   ╚══════╝╚═╝  ╚═╝ ╚══▀▀═╝ ╚══════╝╚══════╝ ╚══▀▀═╝     ║
 ║                                                                  ║
-║           تحقیق - Advanced Network Reconnaissance Tool          ║
+║                                                                  ║
+║                 Advanced Network Reconnaissance Tool             ║
 ║                    For Authorized Security Testing               ║
 ║                              v2.0                                ║
 ║                                                                  ║
@@ -64,7 +65,7 @@ class OutputFormatter:
         
         padding = width - len(message) - 2
         left_pad = padding // 2
-        right_pad = padding - left_pad
+        right_pad = padding - left_pad+2
         
         print(f"\n{color}{self.BOX_TOP_LEFT}{self.BOX_HORIZONTAL * width}{self.BOX_TOP_RIGHT}")
         print(f"{self.BOX_VERTICAL}{' ' * left_pad}{message}{' ' * right_pad}{self.BOX_VERTICAL}")
@@ -145,26 +146,26 @@ class OutputFormatter:
     def print_technology(self, tech_type, tech_name):
         """Print detected technology"""
         icons = {
-            'server': '🖥️ ',
-            'cms': '📝',
-            'framework': '⚛️ ',
-            'library': '📚',
-            'security': '🔒',
-            'cdn': '🌐',
-            'analytics': '📊'
+            'server': '',
+            'cms': '',
+            'framework': '',
+            'library': '',
+            'security': '',
+            'cdn': '',
+            'analytics': ''
         }
         
-        icon = icons.get(tech_type.lower(), '🔧')
+        icon = icons.get(tech_type.lower())
         print(f"   {icon}  {Fore.CYAN}{tech_name}{Style.RESET_ALL}")
     
-    def print_whois_field(self, field_name, value, icon='📋'):
+    def print_whois_field(self, field_name, value, icon=''):
         """Print WHOIS field"""
         if value and value != 'N/A':
             print(f"{icon} {Fore.CYAN}{field_name}:{Style.RESET_ALL} {Fore.WHITE}{value}{Style.RESET_ALL}")
     
     def print_subdomain_found(self, subdomain):
         """Print found subdomain"""
-        print(f"      {self.SUCCESS_COLOR}✅ {subdomain}{Style.RESET_ALL}")
+        print(f"      {self.SUCCESS_COLOR} {subdomain}{Style.RESET_ALL}")
     
     def print_progress(self, current, total, message=""):
         """Print progress"""
@@ -194,7 +195,7 @@ class OutputFormatter:
     def print_disclaimer(self):
         """Print legal disclaimer"""
         print(f"\n{self.BOX_TOP_LEFT}{self.BOX_HORIZONTAL * 66}{self.BOX_TOP_RIGHT}")
-        print(f"{self.BOX_VERTICAL}{Fore.YELLOW + Style.BRIGHT}  ⚠️  LEGAL DISCLAIMER & IMPORTANT NOTICE{' ' * 20}{self.BOX_VERTICAL}{Style.RESET_ALL}")
+        print(f"{self.BOX_VERTICAL}{Fore.YELLOW + Style.BRIGHT}  ⚠️  LEGAL DISCLAIMER & IMPORTANT NOTICE {' ' * 25}{self.BOX_VERTICAL}{Style.RESET_ALL}")
         print(f"{self.BOX_BOTTOM_LEFT}{self.BOX_HORIZONTAL * 66}{self.BOX_BOTTOM_RIGHT}")
         
         print(f"""
@@ -204,12 +205,11 @@ class OutputFormatter:
 
 {Fore.RED}Unauthorized scanning may be ILLEGAL in your jurisdiction!
 {Fore.YELLOW}The developers assume NO liability for misuse of this tool.{Style.RESET_ALL}
-{self.BOX_TOP_LEFT}{self.BOX_HORIZONTAL * 66}{self.BOX_TOP_RIGHT}
 """)
         
         response = input(f"{Fore.CYAN}Do you have authorization to scan this target? (yes/no): {Style.RESET_ALL}")
         
-        if response.lower() != 'yes':
+        if response.lower() != 'yes' or 'y' not in response.lower():
             print(f"\n{self.ERROR_COLOR}[!] Exiting. Please obtain proper authorization first.{Style.RESET_ALL}\n")
             sys.exit(1)
         

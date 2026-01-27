@@ -406,7 +406,7 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print(f"\n\n{Fore.YELLOW}[!] Scan interrupted by user. Exiting gracefully...{Style.RESET_ALL}")
+        print(f"\n\n{Fore.YELLOW}[!] Scan interrupted by user. Exiting...{Style.RESET_ALL}")
         print(f"{Fore.CYAN}Goodbye!{Style.RESET_ALL}\n")
         sys.exit(0)
     except Exception as e:
