@@ -143,23 +143,23 @@ Miscellaneous:
 🔍 WHOIS LOOKUP: example.com
 ============================================================
 
-📋 Domain Name: example.com
-🏢 Organization: Example Organization
-📝 Registrar: Example Registrar Inc.
-📅 Created: 1995-08-14 04:00:00
-📅 Expires: 2025-08-13 04:00:00
+Domain Name: example.com
+Organization: Example Organization
+Registrar: Example Registrar Inc.
+Created: 1995-08-14 04:00:00
+Expires: 2025-08-13 04:00:00
 
 ============================================================
 🔍 PORT SCANNING: example.com (93.184.216.34)
 ============================================================
 
 Progress: 5/15 ports scanned...
-✅ Port    80 | OPEN      | HTTP
-✅ Port   443 | OPEN      | HTTPS
+Port    80 | OPEN      | HTTP
+Port   443 | OPEN      | HTTPS
 Progress: 15/15 ports scanned...
 
-📊 SCAN COMPLETE
-✅ Open Ports: 2/15
+SCAN COMPLETE
+Open Ports: 2/15
 ```
 
 ## ⚙️ Configuration
@@ -252,13 +252,11 @@ Created for security research and educational purposes.
 
 # TEHQEEQ - تحقیق
 
+<img width="924" height="308" alt="tehqeeq" src="https://github.com/user-attachments/assets/69d46c82-ac62-4ad9-863b-2c50a94fa408" />
+
+
+
 <div align="center">
-
-```
-<img width="924" height="308" alt="tehqeeq" src="https://github.com/user-attachments/assets/9c023b95-3295-43e1-bd0b-44cf6f188713" />
-
-```
-
 **Advanced Network Intelligence Gathering Framework**
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
