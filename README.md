@@ -255,20 +255,8 @@ Created for security research and educational purposes.
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║   ████████╗███████╗██╗  ██╗ ██████╗ ███████╗███████╗ ██████╗    ║
-║   ╚══██╔══╝██╔════╝██║  ██║██╔═══██╗██╔════╝██╔════╝██╔═══██╗   ║
-║      ██║   █████╗  ███████║██║   ██║█████╗  █████╗  ██║   ██║   ║
-║      ██║   ██╔══╝  ██╔══██║██║▄▄ ██║██╔══╝  ██╔══╝  ██║▄▄ ██║   ║
-║      ██║   ███████╗██║  ██║╚██████╔╝███████╗███████╗╚██████╔╝   ║
-║      ╚═╝   ╚══════╝╚═╝  ╚═╝ ╚══▀▀═╝ ╚══════╝╚══════╝ ╚══▀▀═╝    ║
-║                                                                  ║
-║           تحقیق - Advanced Network Reconnaissance Tool          ║
-║                    For Authorized Security Testing               ║
-║                              v2.0                                ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
+<img width="924" height="308" alt="tehqeeq" src="https://github.com/user-attachments/assets/9c023b95-3295-43e1-bd0b-44cf6f188713" />
+
 ```
 
 **Advanced Network Intelligence Gathering Framework**
@@ -289,16 +277,15 @@ Created for security research and educational purposes.
 
 ### 🎯 Key Highlights
 
-- 🇵🇰 **Pakistani Domain Support** - Native PKNIC API integration for .pk domains
-- 🎨 **Beautiful Terminal UI** - Professional, color-coded output with descriptive messages
-- 🔍 **Comprehensive Scanning** - WHOIS, DNS, subdomains, ports, banners, technologies
-- 📊 **Multiple Report Formats** - PDF, HTML, JSON, and TXT reports
-- ✅ **Auto Verification** - Built-in result verification against external sources
-- 🚀 **Fast & Efficient** - Optimized scanning with minimal false positives
+- **Pakistani Domain Support** - Native PKNIC API integration for .pk domains
+- **Comprehensive Scanning** - WHOIS, DNS, subdomains, ports, banners, technologies
+- **Multiple Report Formats** - PDF, HTML, JSON, and TXT reports
+- **Auto Verification** - Built-in result verification against external sources
+- **Fast & Efficient** - Optimized scanning with minimal false positives
 
 ---
 
-## ✨ Features
+## ✨Features
 
 ### 🔐 Passive Reconnaissance
 - **WHOIS Lookup**
@@ -711,18 +698,10 @@ pip install -r requirements.txt
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-## 👥 Authors
-
-**TEHQEEQ Development Team**
-- Network reconnaissance specialists
-- Security researchers
-- Open source contributors
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **PKNIC** for providing API access for .pk domains
 - **RedScout** for inspiration on terminal output design
@@ -731,21 +710,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support
+## Support & Queries 
 
-- 📧 Email: support@tehqeeq.io
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/tehqeeq/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/tehqeeq/discussions)
-- 📖 Documentation: [Wiki](https://github.com/yourusername/tehqeeq/wiki)
-
----
-
-## 🌍 Community
-
-Join our community:
-- 🐦 Twitter: [@tehqeeq_tool](https://twitter.com/tehqeeq_tool)
-- 💼 LinkedIn: [TEHQEEQ Network Security](https://linkedin.com/company/tehqeeq)
-- 📺 YouTube: [TEHQEEQ Tutorials](https://youtube.com/@tehqeeq)
+- 📧 Email: laiba244m@gmail.com
 
 ---
 
