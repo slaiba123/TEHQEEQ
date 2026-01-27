@@ -1118,11 +1118,11 @@ class ActiveRecon:
         
         self._socket_scan(ports)
         
-        print(f"\n{'='*60}")
+        print(f"\n{'='*66}")
         print(f"SCAN COMPLETE")
         print(f"Open Ports: {len(self.results['open_ports'])}/{len(ports)}")
         print(f"Finished: {datetime.now().strftime('%H:%M:%S')}")
-        print(f"{'='*60}\n")
+        print(f"{'='*66}\n")
         
         logger.info(f"Port scan completed. {len(self.results['open_ports'])} ports open")
         

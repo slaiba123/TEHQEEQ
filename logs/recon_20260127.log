@@ -172,3 +172,93 @@ TypeError: PassiveRecon.__init__() got an unexpected keyword argument 'formatter
 2026-01-27 21:29:07,654 - modules.passive - INFO - Starting WHOIS lookup for google.com
 2026-01-27 21:29:08,752 - modules.passive - INFO - WHOIS lookup completed successfully
 2026-01-27 21:29:08,752 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-27 21:38:26,316 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:38:26,323 - __main__ - INFO - Target validated: example.com (type: domain)
+2026-01-27 21:38:28,185 - modules.passive - INFO - Starting WHOIS lookup for example.com
+2026-01-27 21:38:30,602 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:38:30,602 - modules.passive - INFO - Starting DNS enumeration for example.com
+2026-01-27 21:38:31,111 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:38:31,113 - modules.passive - INFO - Starting subdomain enumeration for example.com
+2026-01-27 21:38:47,986 - modules.passive - INFO - Subdomain enumeration completed. Total: 2
+2026-01-27 21:38:47,986 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:38:48,007 - modules.active - INFO - Resolved example.com to 104.18.27.120
+2026-01-27 21:38:48,009 - modules.active - INFO - Starting port scan on example.com
+2026-01-27 21:39:04,475 - modules.active - INFO - Port scan completed. 7 ports open
+2026-01-27 21:39:04,475 - modules.active - INFO - Starting banner grabbing for example.com
+2026-01-27 21:39:09,711 - modules.active - INFO - Banner grabbed from port 80
+2026-01-27 21:39:35,029 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-27 21:39:35,029 - modules.active - INFO - Starting technology detection for example.com
+2026-01-27 21:39:35,474 - modules.active - INFO - Technology detection completed. 1 technologies found
+2026-01-27 21:39:35,475 - __main__ - INFO - Active reconnaissance completed
+2026-01-27 21:39:35,484 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:39:54,276 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:39:54,276 - __main__ - INFO - Target validated: example.com (type: domain)
+2026-01-27 21:39:56,336 - modules.passive - INFO - Starting WHOIS lookup for example.com
+2026-01-27 21:39:58,873 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:39:58,873 - modules.passive - INFO - Starting DNS enumeration for example.com
+2026-01-27 21:39:59,001 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:39:59,001 - modules.passive - INFO - Starting subdomain enumeration for example.com
+2026-01-27 21:40:01,878 - modules.passive - INFO - Subdomain enumeration completed. Total: 2
+2026-01-27 21:40:01,879 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:40:01,879 - modules.active - INFO - Resolved example.com to 104.18.27.120
+2026-01-27 21:40:01,889 - modules.active - INFO - Starting port scan on example.com
+2026-01-27 21:40:18,375 - modules.active - INFO - Port scan completed. 7 ports open
+2026-01-27 21:40:18,375 - modules.active - INFO - Starting banner grabbing for example.com
+2026-01-27 21:40:23,622 - modules.active - INFO - Banner grabbed from port 80
+2026-01-27 21:40:48,942 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-27 21:40:48,943 - modules.active - INFO - Starting technology detection for example.com
+2026-01-27 21:40:49,738 - modules.active - INFO - Technology detection completed. 1 technologies found
+2026-01-27 21:40:49,743 - __main__ - INFO - Active reconnaissance completed
+2026-01-27 21:40:49,752 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:41:18,847 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:41:18,849 - __main__ - INFO - Target validated: example.com (type: domain)
+2026-01-27 21:41:21,198 - modules.passive - INFO - Starting WHOIS lookup for example.com
+2026-01-27 21:41:23,038 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:41:23,038 - modules.passive - INFO - Starting DNS enumeration for example.com
+2026-01-27 21:41:23,264 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:41:23,264 - modules.passive - INFO - Starting subdomain enumeration for example.com
+2026-01-27 21:41:26,100 - modules.passive - INFO - Subdomain enumeration completed. Total: 2
+2026-01-27 21:41:26,101 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:41:26,114 - modules.active - INFO - Resolved example.com to 104.18.27.120
+2026-01-27 21:41:26,116 - modules.active - INFO - Starting port scan on example.com
+2026-01-27 21:41:42,581 - modules.active - INFO - Port scan completed. 7 ports open
+2026-01-27 21:41:42,581 - modules.active - INFO - Starting banner grabbing for example.com
+2026-01-27 21:41:47,774 - modules.active - INFO - Banner grabbed from port 80
+2026-01-27 21:42:13,096 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-27 21:42:13,096 - modules.active - INFO - Starting technology detection for example.com
+2026-01-27 21:42:13,969 - modules.active - INFO - Technology detection completed. 1 technologies found
+2026-01-27 21:42:13,994 - __main__ - INFO - Active reconnaissance completed
+2026-01-27 21:42:14,006 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:45:10,233 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:45:10,233 - __main__ - INFO - Target validated: example.com (type: domain)
+2026-01-27 21:45:12,257 - modules.passive - INFO - Starting WHOIS lookup for example.com
+2026-01-27 21:45:14,241 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:45:14,241 - modules.passive - INFO - Starting DNS enumeration for example.com
+2026-01-27 21:45:15,353 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:45:15,353 - modules.passive - INFO - Starting subdomain enumeration for example.com
+2026-01-27 21:45:19,958 - modules.passive - INFO - Subdomain enumeration completed. Total: 2
+2026-01-27 21:45:19,958 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:45:19,958 - modules.active - INFO - Resolved example.com to 104.18.27.120
+2026-01-27 21:45:19,958 - modules.active - INFO - Starting port scan on example.com
+2026-01-27 21:45:36,957 - modules.active - INFO - Port scan completed. 7 ports open
+2026-01-27 21:45:36,957 - modules.active - INFO - Starting banner grabbing for example.com
+2026-01-27 21:45:42,493 - modules.active - INFO - Banner grabbed from port 80
+2026-01-27 21:46:07,890 - modules.active - INFO - Banner grabbing completed. 1 banners found
+2026-01-27 21:46:07,891 - modules.active - INFO - Starting technology detection for example.com
+2026-01-27 21:46:08,713 - modules.active - INFO - Technology detection completed. 1 technologies found
+2026-01-27 21:46:08,716 - __main__ - INFO - Active reconnaissance completed
+2026-01-27 21:46:08,723 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:46:22,844 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:46:22,846 - __main__ - INFO - Target validated: example.com (type: domain)
+2026-01-27 21:46:25,116 - modules.passive - INFO - Starting WHOIS lookup for example.com
+2026-01-27 21:46:26,943 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:46:26,945 - modules.passive - INFO - Starting DNS enumeration for example.com
+2026-01-27 21:46:27,090 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:46:27,092 - modules.passive - INFO - Starting subdomain enumeration for example.com
+2026-01-27 21:46:33,545 - modules.passive - INFO - Subdomain enumeration completed. Total: 2
+2026-01-27 21:46:33,545 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:46:33,566 - modules.active - INFO - Resolved example.com to 104.18.26.120
+2026-01-27 21:46:33,567 - modules.active - INFO - Starting port scan on example.com
+2026-01-27 21:46:49,992 - modules.active - INFO - Port scan completed. 7 ports open
+2026-01-27 21:46:49,992 - modules.active - INFO - Starting banner grabbing for example.com
+2026-01-27 21:46:55,229 - modules.active - INFO - Banner grabbed from port 80
