@@ -54,7 +54,7 @@ class OutputFormatter:
 {Style.RESET_ALL}"""
         print(banner)
     
-    def print_box(self, message, width=66, color=None):
+    def print_box(self, message, width=66, color=HEADER_COLOR):
         """Print a boxed message"""
         if color is None:
             color = self.HEADER_COLOR

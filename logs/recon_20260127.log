@@ -148,3 +148,27 @@ TypeError: PassiveRecon.__init__() got an unexpected keyword argument 'formatter
 2026-01-27 21:26:09,099 - modules.active - INFO - Technology detection completed. 4 technologies found
 2026-01-27 21:26:09,106 - __main__ - INFO - Active reconnaissance completed
 2026-01-27 21:26:09,106 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:26:46,283 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:26:46,292 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:26:48,033 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-27 21:26:49,477 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:26:49,477 - modules.passive - INFO - Starting DNS enumeration for google.com
+2026-01-27 21:27:04,958 - modules.passive - ERROR - Error querying TXT records: The resolution lifetime expired after 15.107 seconds: Server 192.168.1.1 UDP port 53 answered ; Server 192.168.1.1 TCP port 53 answered The DNS operation timed out.
+2026-01-27 21:27:04,983 - modules.passive - INFO - DNS enumeration completed
+2026-01-27 21:27:04,983 - modules.passive - INFO - Starting subdomain enumeration for google.com
+2026-01-27 21:27:23,776 - modules.passive - INFO - Subdomain enumeration completed. Total: 44
+2026-01-27 21:27:23,776 - __main__ - INFO - Passive reconnaissance completed
+2026-01-27 21:27:23,779 - modules.active - INFO - Resolved google.com to 142.250.184.110
+2026-01-27 21:27:23,784 - modules.active - INFO - Starting port scan on google.com
+2026-01-27 21:27:31,826 - modules.active - WARNING - Port scan interrupted by user
+2026-01-27 21:27:31,827 - modules.active - INFO - Port scan completed. 1 ports open
+2026-01-27 21:27:31,827 - modules.active - INFO - Starting banner grabbing for google.com
+2026-01-27 21:27:36,844 - modules.active - INFO - Banner grabbing completed. 0 banners found
+2026-01-27 21:27:36,844 - modules.active - INFO - Starting technology detection for google.com
+2026-01-27 21:27:36,844 - __main__ - INFO - Active reconnaissance completed
+2026-01-27 21:27:36,849 - __main__ - INFO - === Reconnaissance Tool Finished ===
+2026-01-27 21:29:04,933 - __main__ - INFO - === Reconnaissance Tool Started ===
+2026-01-27 21:29:04,946 - __main__ - INFO - Target validated: google.com (type: domain)
+2026-01-27 21:29:07,654 - modules.passive - INFO - Starting WHOIS lookup for google.com
+2026-01-27 21:29:08,752 - modules.passive - INFO - WHOIS lookup completed successfully
+2026-01-27 21:29:08,752 - modules.passive - INFO - Starting DNS enumeration for google.com
