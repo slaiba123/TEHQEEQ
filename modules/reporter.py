@@ -3,6 +3,7 @@ Report Generation Module
 Generates comprehensive reconnaissance reports in TXT and PDF formats
 """
 
+import html
 import os
 import json
 from datetime import datetime
@@ -293,7 +294,7 @@ class Reporter:
             elements.append(Spacer(1, 2*inch))
             elements.append(Paragraph("🔍 RECONNAISSANCE REPORT", title_style))
             elements.append(Spacer(1, 0.3*inch))
-            elements.append(Paragraph(f"Target: {self.target}", styles['Normal']))
+            elements.append(Paragraph(f"Target: {html.escape(self.target)}", styles['Normal']))
             elements.append(Paragraph(f"Generated: {self.timestamp.strftime('%Y-%m-%d %H:%M:%S')}", styles['Normal']))
             elements.append(PageBreak())
             
@@ -308,16 +309,18 @@ class Reporter:
             elements.append(Paragraph(summary_text, styles['Normal']))
             elements.append(Spacer(1, 0.5*inch))
             
-            # Passive Recon
+            # Passive Recon (escape to prevent HTML/script injection in PDF viewer)
             if self.passive_results:
                 elements.append(Paragraph("Passive Reconnaissance", styles['Heading1']))
-                elements.append(Paragraph(str(self.passive_results)[:1000], styles['Normal']))
+                raw_text = html.escape(str(self.passive_results)[:1000])
+                elements.append(Paragraph(raw_text, styles['Normal']))
                 elements.append(Spacer(1, 0.3*inch))
             
-            # Active Recon
+            # Active Recon (escape to prevent HTML/script injection in PDF viewer)
             if self.active_results:
                 elements.append(Paragraph("Active Reconnaissance", styles['Heading1']))
-                elements.append(Paragraph(str(self.active_results)[:1000], styles['Normal']))
+                raw_text = html.escape(str(self.active_results)[:1000])
+                elements.append(Paragraph(raw_text, styles['Normal']))
             
             # Build PDF
             doc.build(elements)
@@ -333,7 +336,7 @@ class Reporter:
             return None
     
     def generate_reports(self, format_type='txt'):
-        """Generate report in specified format"""
+        """Generate report in specified format (txt, json, pdf)."""
         print(f"\n{'='*60}")
         print("📄 Generating Reports...")
         print(f"{'='*60}\n")
@@ -344,6 +347,9 @@ class Reporter:
             return self.generate_json_report()
         elif format_type == 'pdf':
             return self.generate_pdf_report()
+        elif format_type == 'html':
+            print("❌ HTML report is not yet implemented. Use --report txt, json, or pdf.")
+            return None
         else:
             print(f"❌ Unknown report format: {format_type}")
             return None

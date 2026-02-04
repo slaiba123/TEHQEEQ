@@ -1,0 +1,74 @@
+# Local / excluded documentation (not for repo)
+IMPLEMENTATION_NOTES.md
+SECURITY_AND_CODE_REVIEW.md
+
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.env
+.env.local
+.env.*.local
+
+# Build & packaging
+build/
+dist/
+*.egg
+*.egg-info/
+*.egg-info
+.eggs/
+*.manifest
+*.spec
+
+# Install
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Generated at runtime (do not commit)
+logs/
+reports/
+*.log
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# IDE & editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Ruff / linters (optional)
+.ruff_cache/

@@ -13,6 +13,7 @@ import socket
 import logging
 import requests
 from datetime import datetime
+from urllib.parse import quote
 import time
 import re
 
@@ -41,8 +42,9 @@ class PassiveRecon:
         try:
             logger.info(f"Trying PKNIC web scraper for {domain_to_query}")
             
-            # PKNIC web lookup URL
-            url = f"https://pk6.pknic.net.pk/pk5/lookup.PK?name={domain_to_query}"
+            # PKNIC web lookup URL (quote domain to prevent URL injection)
+            safe_domain = quote(domain_to_query, safe='')
+            url = f"https://pk6.pknic.net.pk/pk5/lookup.PK?name={safe_domain}"
             
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'

@@ -209,7 +209,7 @@ class OutputFormatter:
         
         response = input(f"{Fore.CYAN}Do you have authorization to scan this target? (yes/no): {Style.RESET_ALL}")
         
-        if response.lower() != 'yes' or 'y' not in response.lower():
+        if response.lower().strip() not in ('yes', 'y'):
             print(f"\n{self.ERROR_COLOR}[!] Exiting. Please obtain proper authorization first.{Style.RESET_ALL}\n")
             sys.exit(1)
         

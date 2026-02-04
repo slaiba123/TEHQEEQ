@@ -39,6 +39,7 @@ LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 
 # Feature flags
-ENABLE_SSL_VERIFICATION = False  # Set to True for production
+# SSL verification: True = secure (recommended for public use). False = lab/testing only (MITM risk).
+ENABLE_SSL_VERIFICATION = True
 ENABLE_REDIRECTS = True          # Follow HTTP redirects
 MAX_REDIRECTS = 5                # Maximum redirect hops

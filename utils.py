@@ -4,6 +4,7 @@ Utility functions for input validation and helpers
 
 import re
 import sys
+from pathlib import Path
 from colorama import Fore, Style
 
 
@@ -32,6 +33,17 @@ def parse_target(target):
         return target, 'ip'
     else:
         raise ValueError(f"Invalid target format: {target}")
+
+
+def validate_output_path(path):
+    """
+    Resolve output directory path to an absolute path for reports.
+    Raises ValueError if path is empty. Caller is responsible for using
+    the path only for report output.
+    """
+    if not path or not path.strip():
+        raise ValueError("Output path cannot be empty")
+    return str(Path(path).resolve())
 
 
 def show_disclaimer():

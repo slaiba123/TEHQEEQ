@@ -243,12 +243,12 @@ class ActiveRecon:
                 else:
                     try:
                         sock.send(b"\r\n")
-                    except:
+                    except OSError:
                         pass
                 
                 # Try to receive banner
                 try:
-                    banner = sock.recv(4096).decode('utf-8', errors='ignore').strip()
+                    banner = sock.recv(config.BANNER_MAX_SIZE).decode('utf-8', errors='ignore').strip()
                     if banner:
                         display_banner = banner[:300] if len(banner) > 300 else banner
                         print(f"Port {port} ({self._get_service_name(port)}):")
@@ -324,10 +324,14 @@ class ActiveRecon:
             
             try:
                 print(f"[INFO] Analyzing {url}...")
-                import urllib3
-                urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-                
-                response = requests.get(url, timeout=config.WEB_REQUEST_TIMEOUT, verify=False)
+                if not config.ENABLE_SSL_VERIFICATION:
+                    import urllib3
+                    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+                response = requests.get(
+                    url,
+                    timeout=config.WEB_REQUEST_TIMEOUT,
+                    verify=config.ENABLE_SSL_VERIFICATION,
+                )
                 success = True
                 print(f"   [SUCCESS] Connected successfully\n")
                 break

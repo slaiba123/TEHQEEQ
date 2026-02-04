@@ -19,7 +19,7 @@ from modules.passive import PassiveRecon
 from modules.active import ActiveRecon
 from modules.reporter import Reporter
 from modules.output_formatter import create_formatter
-from utils import parse_target
+from utils import parse_target, validate_output_path
 
 
 def setup_logging(verbose=False):
@@ -67,7 +67,7 @@ Examples:
     parser.add_argument("--all", "--full", action="store_true", help="Run all reconnaissance modules")
     
     # Reporting
-    parser.add_argument("--report", choices=["txt", "json", "pdf", "html"], help="Generate report")
+    parser.add_argument("--report", choices=["txt", "json", "pdf"], help="Generate report (txt, json, pdf)")
     parser.add_argument("--output", "-o", help="Custom output directory for reports")
     
     # Verbosity
@@ -120,9 +120,13 @@ Examples:
     
     # Set custom output directory if specified
     if args.output:
-        import config
-        config.REPORTS_FOLDER = args.output
-        logger.info(f"Custom output directory set: {args.output}")
+        try:
+            import config
+            config.REPORTS_FOLDER = validate_output_path(args.output)
+            logger.info(f"Custom output directory set: {config.REPORTS_FOLDER}")
+        except ValueError as e:
+            formatter.print_error(str(e))
+            sys.exit(1)
     
     # Print target info
     formatter.print_target_info(target, verbosity, full_scan=args.all)

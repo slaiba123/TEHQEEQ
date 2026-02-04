@@ -96,7 +96,7 @@ Advanced Network Intelligence Gathering Framework
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tehqeeq.git
+git clone https://github.com/slaiba123/tehqeeq.git
 cd tehqeeq
 
 # Install dependencies
@@ -104,6 +104,102 @@ pip install -r requirements.txt
 
 # Run TEHQEEQ
 python main.py --help
+```
+
+### Install from PyPI (direct pip install)
+
+Once the package is published on [PyPI](https://pypi.org), anyone can install it **without cloning the repo**:
+
+```bash
+# Install the tool and its core dependencies
+pip install tehqeeq
+
+# Run it from anywhere
+tehqeeq example.com --whois --dns
+tehqeeq example.com --all --report pdf
+```
+
+**Optional extras** (install only if you need them):
+
+```bash
+# PDF report generation
+pip install tehqeeq[pdf]
+
+# Nmap integration for port scanning
+pip install tehqeeq[nmap]
+```
+
+No Git, no `cd` into a folder—just `pip install tehqeeq` and use the `tehqeeq` command.
+
+---
+
+### Install from source (clone first)
+
+If the package isn’t on PyPI yet, or you want to develop it:
+
+```bash
+git clone https://github.com/slaiba123/tehqeeq.git
+cd tehqeeq
+
+# Editable install (changes in code apply immediately)
+pip install -e .
+
+# Or production-style install
+pip install .
+
+# With optional features
+pip install -e ".[pdf]"
+pip install -e ".[nmap]"
+
+# Run
+tehqeeq example.com --whois --dns
+```
+
+---
+
+### Publishing to PyPI (for maintainers)
+
+To allow **direct** `pip install tehqeeq` for everyone:
+
+1. **Create a PyPI account**  
+   [pypi.org](https://pypi.org) → Register (and optionally create an API token).
+
+2. **Install build tools:**
+   ```bash
+   pip install build twine
+   ```
+
+3. **Build the package** (from project root):
+   ```bash
+   python -m build
+   ```
+   This creates `dist/tehqeeq-2.0.0.tar.gz` and a wheel.
+
+4. **Upload to PyPI:**
+   ```bash
+   twine upload dist/*
+   ```
+   Use your PyPI username and password/API token when prompted.
+
+5. **Done.** Anyone can now run:
+   ```bash
+   pip install tehqeeq
+   tehqeeq example.com --all
+   ```
+
+For **test uploads** (no impact on the real PyPI index), use [TestPyPI](https://test.pypi.org):
+```bash
+twine upload --repository testpypi dist/*
+pip install --index-url https://test.pypi.org/simple/ tehqeeq
+```
+
+---
+
+### Running tests
+
+```bash
+# From project root
+python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
 ### Dependencies
@@ -148,10 +244,9 @@ Scan Options:
   --all, --full        Run all reconnaissance modules
 
 Reporting:
-  --report {txt,json,pdf,html}
+  --report {txt,json,pdf}
                        Generate report in specified format
   --output, -o         Custom output directory for reports
-  --verify             Verify results against external sources
 
 Verbosity:
   -v, -vv, -vvv        Increase verbosity level
@@ -184,8 +279,8 @@ python main.py www.example.com --ports --tech
 # Full scan with PDF report
 python main.py www.neduet.edu.pk --all --report pdf -vv
 
-# Scan with verification
-python main.py google.com --all --verify -vv
+# Full scan with PDF report
+python main.py google.com --all --report pdf -vv
 
 # RedScout-style syntax
 python main.py -d www.example.com --full -vvv
@@ -296,6 +391,7 @@ python main.py target.com --all -vvv
 tehqeeq/
 ├── main.py                      # Main entry point
 ├── config.py                    # Configuration settings
+├── pyproject.toml               # Package metadata & install config
 ├── requirements.txt             # Dependencies
 ├── README.md                    # This file
 ├── modules/
@@ -303,9 +399,11 @@ tehqeeq/
 │   ├── passive.py              # Passive reconnaissance
 │   ├── active.py               # Active reconnaissance
 │   ├── reporter.py             # Report generation
-│   ├── verification.py         # Result verification
 │   └── output_formatter.py     # Terminal output formatting
 ├── utils.py                     # Utility functions
+├── tests/                       # Unit tests
+│   ├── test_utils.py
+│   └── test_reporter.py
 ├── reports/                     # Generated reports
 └── logs/                        # Log files
 ```
