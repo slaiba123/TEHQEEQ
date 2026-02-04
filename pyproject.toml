@@ -27,7 +27,6 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Topic :: Security",
 ]
-
 dependencies = [
     "python-whois>=0.8.0",
     "dnspython>=2.3.0",
@@ -52,5 +51,5 @@ Documentation = "https://github.com/slaiba123/tehqeeq#readme"
 where = ["."]
 include = ["modules*"]
 
-[tool.setuptools.py-modules]
-include = ["main", "utils", "config"]
+[tool.setuptools]
+py-modules = ["main", "utils", "config"]
