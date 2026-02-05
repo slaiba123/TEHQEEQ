@@ -48,7 +48,7 @@ class OutputFormatter:
 ║                                                                  ║
 ║                 Advanced Network Reconnaissance Tool             ║
 ║                    For Authorized Security Testing               ║
-║                              v2.0                                ║
+║                              v1.0                                ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 {Style.RESET_ALL}"""
