@@ -7,6 +7,7 @@ name = "tehqeeq"
 version = "2.0.0"
 description = "Advanced Network Reconnaissance Tool - WHOIS, DNS, subdomains, port scan, tech detection"
 readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.8"
 authors = [
     { name = "LAIBA MUSHTAQ" }
@@ -16,7 +17,6 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: Information Technology",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
