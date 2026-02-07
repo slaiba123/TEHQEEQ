@@ -1,6 +1,7 @@
 # TEHQEEQ - تحقیق
 
-<img width="924" height="308" alt="tehqeeq" src="https://github.com/user-attachments/assets/69d46c82-ac62-4ad9-863b-2c50a94fa408" />
+
+<img width="1536" height="1024" alt="tehqeeq" src="https://github.com/user-attachments/assets/e23fbaba-eb9a-433f-a542-e59e17fc6a58" />
 
 <div align="center">
 Advanced Network Intelligence Gathering Framework
@@ -69,12 +70,11 @@ Advanced Network Intelligence Gathering Framework
    - Concurrent testing for speed
    - Smart progress indicators
 
-#### **Subdomain Verification** ⭐ NEW
+#### **Subdomain Verification** 
 - **DNS Verification** (fast): Checks if subdomains resolve to IPs
 - **HTTP Verification** (thorough): Tests actual web service availability
 - Identifies live, dead, and internal-only subdomains
 - Concurrent verification (20 workers)
-- Exports verified lists separately
 - Shows IP addresses, HTTP status, page titles
 
 ### 🎯 Active Reconnaissance
@@ -151,12 +151,6 @@ Advanced Network Intelligence Gathering Framework
   - Shows ALL subdomains
   - Verification summaries
 
-#### **Export Options**
-- Verified subdomains export (separate file)
-- Active scan JSON export
-- Custom output directories
-- Timestamped filenames
-
 ---
 
 ## 🚀 Installation
@@ -181,7 +175,7 @@ pip install -r requirements.txt
 python main.py --help
 ```
 
-### Install from PyPI (When Published)
+### Install from PyPI 
 
 ```bash
 # Install the tool and core dependencies
@@ -221,7 +215,7 @@ pip install -e ".[pdf,nmap]"
 tehqeeq example.com --all
 ```
 
-### Install Nmap (Optional but Recommended)
+### Install Nmap (Optional Recommended if you want in-depth analysis)
 
 **Ubuntu/Debian:**
 ```bash
@@ -856,34 +850,6 @@ r = Reporter("example.com", p.results, a.results)
 r.generate_pdf_report()
 ```
 
----
-
-## 🎯 Roadmap
-
-### Current Version (2.0)
-- ✅ PKNIC integration
-- ✅ Certificate Transparency logs
-- ✅ Subdomain verification
-- ✅ Nmap integration
-- ✅ Multiple scan modes
-- ✅ Detection modes
-- ✅ Complete PDF reports
-
-### Planned Features (v2.1)
-- [ ] Web interface
-- [ ] API for programmatic access
-- [ ] Email enumeration
-- [ ] Screenshots of verified subdomains
-- [ ] Integration with Shodan/Censys
-- [ ] Cloud storage export (Google Drive, Dropbox)
-
-### Future (v3.0)
-- [ ] Vulnerability scanning module
-- [ ] Continuous monitoring mode
-- [ ] Multi-target scanning
-- [ ] Integration with OSINT frameworks
-- [ ] Mobile app
-- [ ] Team collaboration features
 
 ---
 
@@ -941,41 +907,12 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ---
 
-## 🙏 Acknowledgments
-
-- **PKNIC** for providing API access for .pk domains
-- **crt.sh** for Certificate Transparency log aggregation
-- **Nmap Project** for port scanning methodology
-- **Python Security Community** for tools and libraries
-- **Contributors** who have helped improve this tool
-
----
-
 ## 📧 Support & Contact
 
 - **Email**: laiba244m@gmail.com
 - **GitHub Issues**: [Report bugs or request features](https://github.com/slaiba123/tehqeeq/issues)
 - **Documentation**: [Full documentation](https://github.com/slaiba123/tehqeeq#readme)
 
----
-
-## 📊 Statistics
-
-### Tool Capabilities
-- **4** Subdomain discovery methods
-- **3** Scan modes (quick/normal/full)
-- **3** Detection modes (strict/balanced/loose)
-- **2** Verification methods (DNS/HTTP)
-- **3** Report formats (PDF/JSON/TXT)
-- **30+** Service detections
-- **200+** Subdomain wordlist
-- **50** Concurrent threads
-
-### Tested On
-- ✅ Linux (Ubuntu 20.04, 22.04)
-- ✅ macOS (Monterey, Ventura, Sonoma)
-- ✅ Windows (10, 11)
-- ✅ Python 3.8, 3.9, 3.10, 3.11, 3.12
 
 ---
 
@@ -989,7 +926,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ---
 
-**TEHQEEQ v2.0** - Advanced Network Reconnaissance  
+**TEHQEEQ v1.0** - Advanced Network Reconnaissance  
 *For authorized security testing and educational purposes only*
 
 </div>
