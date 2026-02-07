@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "TEHQEEQ"
-version = "1.0.0"
+version = "1.0"
 description = "Advanced Network Reconnaissance Tool - WHOIS, DNS, subdomains, port scan, tech detection"
 readme = "README.md"
 license = "MIT"
