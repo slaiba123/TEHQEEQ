@@ -1,6 +1,7 @@
-# TEHQEEQ - تحقیق
+# TEHQEEQ - 
+تحقیق
 
-<img width="924" height="308" alt="tehqeeq" src="https://github.com/user-attachments/assets/69d46c82-ac62-4ad9-863b-2c50a94fa408" />
+<img width="1536" height="1024" alt="tehqeeq" src="https://github.com/user-attachments/assets/e23fbaba-eb9a-433f-a542-e59e17fc6a58" />
 
 <div align="center">
 Advanced Network Intelligence Gathering Framework
