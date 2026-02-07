@@ -907,16 +907,6 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ---
 
-## 🙏 Acknowledgments
-
-- **PKNIC** for providing API access for .pk domains
-- **crt.sh** for Certificate Transparency log aggregation
-- **Nmap Project** for port scanning methodology
-- **Python Security Community** for tools and libraries
-- **Contributors** who have helped improve this tool
-
----
-
 ## 📧 Support & Contact
 
 - **Email**: laiba244m@gmail.com
