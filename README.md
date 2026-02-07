@@ -1,5 +1,5 @@
-# TEHQEEQ - 
-تحقیق
+# TEHQEEQ - تحقیق
+
 
 <img width="1536" height="1024" alt="tehqeeq" src="https://github.com/user-attachments/assets/e23fbaba-eb9a-433f-a542-e59e17fc6a58" />
 
